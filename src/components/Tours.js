@@ -3,14 +3,14 @@ import Card from './Card';
 
 const Tours = ({tours, removeTour}) => {
     return (
-        <div>
+        <div className='container'>
             {/* heading */}
             <div>
-                <h2>Tourism Planner</h2>
+                <h2 className='title'>Tourism Planner</h2>
             </div>
 
             {/* Mapping of card Values with the Tour Data */}
-            <div>
+            <div className='cards'>
                 {
                     tours.map((tour) => {
                         // return <Card t = {tour}/>
